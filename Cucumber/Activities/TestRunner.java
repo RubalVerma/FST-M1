@@ -9,13 +9,16 @@ import org.junit.runner.RunWith;
 
         features = "src/test/java/Features",
         glue = {"StepDefinitions"},
-        tags = "@scenario1",
+        tags = "@SimpleAlert",
         publish = true,
+        plugin = {"pretty"},
+        monochrome = true
+        /*
         plugin = {
                 "html:src/Reports/HTML_Report.html",
                 "json:src/Reports/JSON_Report.json",
                 "junit:src/Reports/XML_Report.xml"
-        }
+        }*/
         )
 
 
