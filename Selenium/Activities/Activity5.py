@@ -9,7 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 service = FirefoxService(GeckoDriverManager().install())
 
 # Start the Driver
-with webdriver_manager.Firefox(service=service) as driver:
+with webdriver.Firefox(service=service) as driver:
      # Declare actions variable
     actions = ActionChains(driver)
 
