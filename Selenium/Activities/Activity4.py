@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 service = FirefoxService(GeckoDriverManager().install())
 
 # Start the Driver
-with webdriver_manager.Firefox(service=service) as driver:
+with webdriver.Firefox(service=service) as driver:
     # Navigate to the URL
     driver.get("https://v1.training-support.net/selenium/target-practice")
 
