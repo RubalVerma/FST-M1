@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import Select
 service = FirefoxService(GeckoDriverManager().install())
 
 # Start the Driver
-with webdriver_manager.Firefox(service=service) as driver:
+with webdriver.Firefox(service=service) as driver:
     # Initialize the wait object
     wait = WebDriverWait(driver, 10)
 
