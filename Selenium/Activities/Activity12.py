@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions
 service = FirefoxService(GeckoDriverManager().install())
 
 # Start the Driver
-with webdriver_manager.Firefox(service=service) as driver:
+with webdriver.Firefox(service=service) as driver:
 # Navigate to the URL
     driver.get("https://v1.training-support.net/selenium/dynamic-controls")
     # Print the title of the page
